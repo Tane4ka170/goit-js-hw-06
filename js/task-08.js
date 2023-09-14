@@ -7,7 +7,7 @@ loginForm.addEventListener('submit', function (event) {
     const formPassword = loginForm.elements.password;
     let formData;
     
-    if(formEmail.value === '' && formPassword.value === ''){
+    if(formEmail.value === '' || formPassword.value === ''){
     alert('Будь ласка, заповніть всі поля');
 } else{
     formData ={
