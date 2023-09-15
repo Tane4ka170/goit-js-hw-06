@@ -5,12 +5,11 @@ loginForm.addEventListener('submit', function (event) {
     
     const formEmail = loginForm.elements.email;
     const formPassword = loginForm.elements.password;
-    let formData;
     
     if(formEmail.value === '' || formPassword.value === ''){
     return alert('Будь ласка, заповніть всі поля');
 } 
-    formData ={
+    const formData ={
         email: formEmail.value,
         password: formPassword.value
     }
